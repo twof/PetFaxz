@@ -48,7 +48,7 @@ public struct PetFaxzService: APIRequest, Gettable {
     fileprivate let endpoint: PetFaxz
     
     fileprivate var baseURL: NSURL {
-        return NSURL(string: "http://f78b7b45.ngrok.io/")!
+        return NSURL(string: "https://f78b7b45.ngrok.io/")!
     }
     
     fileprivate var headers: [HTTPHeader] {
@@ -79,13 +79,7 @@ public struct PetFaxzService: APIRequest, Gettable {
     }
     
     public func get(completionHandler: @escaping (Result<String>) -> Void) {
-        let head = self.headers.map {($0.key, $0.requestHeaderValue)}.reduce([String: String]()) { (acc, kv)in
-            var ret = acc
-            ret[kv.0] = kv.1
-            return ret
-        }
-        
-        Alamofire.request(self.url, method: self.endpoint.method, parameters: self.query, encoding: URLEncoding.default, headers: head).validate().responseString { response in
+        Alamofire.request(self.url, method: self.endpoint.method, parameters: self.query, encoding: URLEncoding.default, headers: [:]).validate().responseJSON { response in
             
             switch response.result {
             case .failure(let error):

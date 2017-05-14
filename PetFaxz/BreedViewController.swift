@@ -250,6 +250,7 @@ class BreedViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         PetFaxzService(endpoint: PetFaxz.GetMessage(breed: (self.dog?.breed)!, age: (self.dog?.age)!, name: (self.dog?.name)!, pronoun: (self.dog?.pronouns)!)).get { (result) in
             switch result {
             case .Success(let message):
+                print(message)
                 self.scheduleLocal(message: message)
             case .Failure(let error):
                 print(error)
@@ -271,7 +272,7 @@ class BreedViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         dateComponents.hour = 10
         dateComponents.minute = 30
        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: true)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         

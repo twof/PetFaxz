@@ -1,0 +1,6 @@
+framework module Pods_PetFaxz {
+  umbrella header "Pods-PetFaxz-umbrella.h"
+
+  export *
+  module * { export * }
+}

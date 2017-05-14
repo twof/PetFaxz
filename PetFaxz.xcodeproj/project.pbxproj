@@ -12,9 +12,15 @@
 		240AEFDD1EC804EE00004FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240AEFDB1EC804EE00004FB8 /* Main.storyboard */; };
 		240AEFDF1EC804EE00004FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240AEFDE1EC804EE00004FB8 /* Assets.xcassets */; };
 		240AEFE21EC804EE00004FB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240AEFE01EC804EE00004FB8 /* LaunchScreen.storyboard */; };
+		240AEFF21EC842F000004FB8 /* PetFaxzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AEFF11EC842F000004FB8 /* PetFaxzService.swift */; };
+		240AEFF51EC8433900004FB8 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AEFF41EC8433900004FB8 /* HTTPHeader.swift */; };
+		240AEFF71EC8434000004FB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AEFF61EC8434000004FB8 /* Result.swift */; };
+		240AEFFA1EC843D600004FB8 /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AEFF91EC843D600004FB8 /* Gettable.swift */; };
+		BA4C094B01A04721EDFC28F2 /* Pods_PetFaxz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8EE879EAEF61DBBE448113 /* Pods_PetFaxz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A8EE879EAEF61DBBE448113 /* Pods_PetFaxz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetFaxz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		240AEFD41EC804EE00004FB8 /* PetFaxz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFaxz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		240AEFD71EC804EE00004FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		240AEFD91EC804EE00004FB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		240AEFDE1EC804EE00004FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		240AEFE11EC804EE00004FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240AEFE31EC804EE00004FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240AEFF11EC842F000004FB8 /* PetFaxzService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetFaxzService.swift; sourceTree = "<group>"; };
+		240AEFF41EC8433900004FB8 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		240AEFF61EC8434000004FB8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		240AEFF91EC843D600004FB8 /* Gettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
+		8744DACCE693BC20D6AA2990 /* Pods-PetFaxz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFaxz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz.debug.xcconfig"; sourceTree = "<group>"; };
+		C41BDFE6E160C31FCE208776 /* Pods-PetFaxz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFaxz.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4C094B01A04721EDFC28F2 /* Pods_PetFaxz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0917C1287A4FC56B00025F7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8EE879EAEF61DBBE448113 /* Pods_PetFaxz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		240AEFCB1EC804EE00004FB8 = {
 			isa = PBXGroup;
 			children = (
 				240AEFD61EC804EE00004FB8 /* PetFaxz */,
 				240AEFD51EC804EE00004FB8 /* Products */,
+				A384B8811A24E5883CA26B30 /* Pods */,
+				0917C1287A4FC56B00025F7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +77,8 @@
 		240AEFD61EC804EE00004FB8 /* PetFaxz */ = {
 			isa = PBXGroup;
 			children = (
+				240AEFF81EC843D600004FB8 /* Protocols */,
+				240AEFEF1EC842F000004FB8 /* Networking */,
 				240AEFD71EC804EE00004FB8 /* AppDelegate.swift */,
 				240AEFD91EC804EE00004FB8 /* ViewController.swift */,
 				240AEFDB1EC804EE00004FB8 /* Main.storyboard */,
@@ -64,6 +89,49 @@
 			path = PetFaxz;
 			sourceTree = "<group>";
 		};
+		240AEFEF1EC842F000004FB8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				240AEFF31EC8432D00004FB8 /* Helpers */,
+				240AEFF01EC842F000004FB8 /* APIClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		240AEFF01EC842F000004FB8 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				240AEFF11EC842F000004FB8 /* PetFaxzService.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		240AEFF31EC8432D00004FB8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				240AEFF61EC8434000004FB8 /* Result.swift */,
+				240AEFF41EC8433900004FB8 /* HTTPHeader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		240AEFF81EC843D600004FB8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				240AEFF91EC843D600004FB8 /* Gettable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A384B8811A24E5883CA26B30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8744DACCE693BC20D6AA2990 /* Pods-PetFaxz.debug.xcconfig */,
+				C41BDFE6E160C31FCE208776 /* Pods-PetFaxz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 240AEFE61EC804EE00004FB8 /* Build configuration list for PBXNativeTarget "PetFaxz" */;
 			buildPhases = (
+				04EDD5E9F9BE227C42595F88 /* [CP] Check Pods Manifest.lock */,
 				240AEFD01EC804EE00004FB8 /* Sources */,
 				240AEFD11EC804EE00004FB8 /* Frameworks */,
 				240AEFD21EC804EE00004FB8 /* Resources */,
+				2199245CCCB5AE617DD8AF6A /* [CP] Embed Pods Frameworks */,
+				E2E0DD9210D0968DB77B8D38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +202,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04EDD5E9F9BE227C42595F88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2199245CCCB5AE617DD8AF6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E0DD9210D0968DB77B8D38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		240AEFD01EC804EE00004FB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240AEFF51EC8433900004FB8 /* HTTPHeader.swift in Sources */,
+				240AEFFA1EC843D600004FB8 /* Gettable.swift in Sources */,
+				240AEFF71EC8434000004FB8 /* Result.swift in Sources */,
 				240AEFDA1EC804EE00004FB8 /* ViewController.swift in Sources */,
 				240AEFD81EC804EE00004FB8 /* AppDelegate.swift in Sources */,
+				240AEFF21EC842F000004FB8 /* PetFaxzService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +381,7 @@
 		};
 		240AEFE71EC804EE00004FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8744DACCE693BC20D6AA2990 /* Pods-PetFaxz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PetFaxz/Info.plist;
@@ -270,6 +394,7 @@
 		};
 		240AEFE81EC804EE00004FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41BDFE6E160C31FCE208776 /* Pods-PetFaxz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PetFaxz/Info.plist;
@@ -299,6 +424,7 @@
 				240AEFE81EC804EE00004FB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

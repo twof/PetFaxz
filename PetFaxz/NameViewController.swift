@@ -9,7 +9,9 @@
 import UIKit
 
 class NameViewController: UIViewController {
+    var dog: Dog?
 
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,18 @@ class NameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func coolButtonPressed(_ sender: Any) {
+        guard let name = nameTextField.text else {return}
+        
+        self.dog = Dog()
+        self.dog?.name = name
+    }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! AgeViewController
+        vc.dog = self.dog
     }
-    */
-
 }

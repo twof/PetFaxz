@@ -9,8 +9,10 @@
 import Foundation
 
 public struct Dog {
-    var name: String
-    var pronouns: String
-    var age: Int
-    var breed: String
+    var name: String?
+    var pronouns: String?
+    var age: Int?
+    var breed: String?
+    
+    init() {}
 }

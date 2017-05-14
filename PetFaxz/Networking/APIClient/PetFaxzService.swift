@@ -48,7 +48,7 @@ public struct PetFaxzService: APIRequest, Gettable {
     fileprivate let endpoint: PetFaxz
     
     fileprivate var baseURL: NSURL {
-        return NSURL(string: "https://whale2-elixir.herokuapp.com/")!
+        return NSURL(string: "http://f78b7b45.ngrok.io/")!
     }
     
     fileprivate var headers: [HTTPHeader] {

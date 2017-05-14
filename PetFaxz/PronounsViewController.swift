@@ -9,7 +9,8 @@
 import UIKit
 
 class PronounsViewController: UIViewController {
-
+    var dog: Dog?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +21,25 @@ class PronounsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func sheHerButton(_ sender: Any) {
+        self.dog?.pronouns = "she"
+        self.performSegue(withIdentifier: "ToBreed", sender: self)
     }
-    */
+    
+    @IBAction func heHimButton(_ sender: Any) {
+        self.dog?.pronouns = "he"
+        self.performSegue(withIdentifier: "ToBreed", sender: self)
+    }
 
+    @IBAction func theyThemButton(_ sender: Any) {
+        self.dog?.pronouns = "they"
+        self.performSegue(withIdentifier: "ToBreed", sender: self)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! BreedViewController
+        
+        vc.dog = self.dog
+    }
 }

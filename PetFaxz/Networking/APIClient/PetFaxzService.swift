@@ -24,7 +24,7 @@ private protocol Endpoint {
 }
 
 public enum PetFaxz {
-    case GetMessage(String, Int, String, String)
+    case GetMessage(breed: String, age: Int, name: String, pronoun: String)
 }
 
 extension PetFaxz: Endpoint {

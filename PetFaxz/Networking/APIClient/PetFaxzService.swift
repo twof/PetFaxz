@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 let apiKey = "56beeef0c5e34b939e93ac369ff28438"
 
@@ -90,27 +91,11 @@ public struct PetFaxzService: APIRequest, Gettable {
             case .failure(let error):
                 completionHandler(Result.Failure(error))
             case .success(let json):
-                
-                switch self.endpoint{
-                case .LoginUser, .CreateUser:
-                    guard let token = response.response?.allHeaderFields["Authorization"] as? String else{
-                        print("There is no token wtf?")
-                        break
-                    }
-                    
-                    let keychain = KeychainSwift()
-                    keychain.set(token, forKey: "authToken")
-                default:
-                    break
+                guard let respJSON = JSON(json)["message"].string else {
+                    return
                 }
                 
-                
-                guard let obj = self.retType.init(JSONString: json) else {
-                    print("something went wrong with optional chaining when returning the object")
-                    break
-                }
-                
-                completionHandler(Result.Success(obj))
+                completionHandler(Result.Success(respJSON))
             }
         }
     }

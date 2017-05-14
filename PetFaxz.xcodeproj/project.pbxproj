@@ -20,6 +20,7 @@
 		24E3D88B1EC8F9A500CA2C83 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D88A1EC8F9A500CA2C83 /* AgeViewController.swift */; };
 		24E3D88D1EC8F9B700CA2C83 /* PronounsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D88C1EC8F9B700CA2C83 /* PronounsViewController.swift */; };
 		24E3D88F1EC8F9CC00CA2C83 /* BreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D88E1EC8F9CC00CA2C83 /* BreedViewController.swift */; };
+		24E3D8921EC8FA2900CA2C83 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D8911EC8FA2900CA2C83 /* Dog.swift */; };
 		BA4C094B01A04721EDFC28F2 /* Pods_PetFaxz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8EE879EAEF61DBBE448113 /* Pods_PetFaxz.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,7 @@
 		1A8EE879EAEF61DBBE448113 /* Pods_PetFaxz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetFaxz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		240AEFD41EC804EE00004FB8 /* PetFaxz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFaxz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		240AEFD71EC804EE00004FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		240AEFD91EC804EE00004FB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		240AEFD91EC804EE00004FB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		240AEFDC1EC804EE00004FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		240AEFDE1EC804EE00004FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		240AEFE11EC804EE00004FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,10 +37,11 @@
 		240AEFF41EC8433900004FB8 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		240AEFF61EC8434000004FB8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		240AEFF91EC843D600004FB8 /* Gettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
-		24E3D8881EC8F99700CA2C83 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
-		24E3D88A1EC8F9A500CA2C83 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
-		24E3D88C1EC8F9B700CA2C83 /* PronounsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PronounsViewController.swift; sourceTree = "<group>"; };
-		24E3D88E1EC8F9CC00CA2C83 /* BreedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedViewController.swift; sourceTree = "<group>"; };
+		24E3D8881EC8F99700CA2C83 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameViewController.swift; path = ../NameViewController.swift; sourceTree = "<group>"; };
+		24E3D88A1EC8F9A500CA2C83 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgeViewController.swift; path = ../AgeViewController.swift; sourceTree = "<group>"; };
+		24E3D88C1EC8F9B700CA2C83 /* PronounsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PronounsViewController.swift; path = ../PronounsViewController.swift; sourceTree = "<group>"; };
+		24E3D88E1EC8F9CC00CA2C83 /* BreedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreedViewController.swift; path = ../BreedViewController.swift; sourceTree = "<group>"; };
+		24E3D8911EC8FA2900CA2C83 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		8744DACCE693BC20D6AA2990 /* Pods-PetFaxz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFaxz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz.debug.xcconfig"; sourceTree = "<group>"; };
 		C41BDFE6E160C31FCE208776 /* Pods-PetFaxz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFaxz.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetFaxz/Pods-PetFaxz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,18 +87,15 @@
 		240AEFD61EC804EE00004FB8 /* PetFaxz */ = {
 			isa = PBXGroup;
 			children = (
+				24E3D8931EC8FA9000CA2C83 /* Controllers */,
+				24E3D8901EC8FA1F00CA2C83 /* Models */,
 				240AEFF81EC843D600004FB8 /* Protocols */,
 				240AEFEF1EC842F000004FB8 /* Networking */,
 				240AEFD71EC804EE00004FB8 /* AppDelegate.swift */,
-				240AEFD91EC804EE00004FB8 /* ViewController.swift */,
 				240AEFDB1EC804EE00004FB8 /* Main.storyboard */,
 				240AEFDE1EC804EE00004FB8 /* Assets.xcassets */,
 				240AEFE01EC804EE00004FB8 /* LaunchScreen.storyboard */,
 				240AEFE31EC804EE00004FB8 /* Info.plist */,
-				24E3D8881EC8F99700CA2C83 /* NameViewController.swift */,
-				24E3D88A1EC8F9A500CA2C83 /* AgeViewController.swift */,
-				24E3D88C1EC8F9B700CA2C83 /* PronounsViewController.swift */,
-				24E3D88E1EC8F9CC00CA2C83 /* BreedViewController.swift */,
 			);
 			path = PetFaxz;
 			sourceTree = "<group>";
@@ -133,6 +132,26 @@
 				240AEFF91EC843D600004FB8 /* Gettable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		24E3D8901EC8FA1F00CA2C83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24E3D8911EC8FA2900CA2C83 /* Dog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24E3D8931EC8FA9000CA2C83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24E3D88E1EC8F9CC00CA2C83 /* BreedViewController.swift */,
+				24E3D88C1EC8F9B700CA2C83 /* PronounsViewController.swift */,
+				24E3D88A1EC8F9A500CA2C83 /* AgeViewController.swift */,
+				24E3D8881EC8F99700CA2C83 /* NameViewController.swift */,
+				240AEFD91EC804EE00004FB8 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A384B8811A24E5883CA26B30 /* Pods */ = {
@@ -272,6 +291,7 @@
 				24E3D8891EC8F99700CA2C83 /* NameViewController.swift in Sources */,
 				24E3D88F1EC8F9CC00CA2C83 /* BreedViewController.swift in Sources */,
 				240AEFF71EC8434000004FB8 /* Result.swift in Sources */,
+				24E3D8921EC8FA2900CA2C83 /* Dog.swift in Sources */,
 				24E3D88D1EC8F9B700CA2C83 /* PronounsViewController.swift in Sources */,
 				240AEFDA1EC804EE00004FB8 /* ViewController.swift in Sources */,
 				240AEFD81EC804EE00004FB8 /* AppDelegate.swift in Sources */,

@@ -272,7 +272,7 @@ class BreedViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         dateComponents.hour = 10
         dateComponents.minute = 30
        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         

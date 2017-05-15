@@ -10,11 +10,15 @@ import UIKit
 
 class NameViewController: UIViewController {
     var dog: Dog?
-
+    
+    // MARK: IBOutlets
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var coolButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        coolButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 

@@ -102,6 +102,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f8L-Cl-qeL"/>
+                    <connections>
+                        <outlet property="noButton" destination="Md5-Va-QrY" id="iHp-wn-ltF"/>
+                        <outlet property="yesButton" destination="17w-kx-Ubg" id="Rcc-xZ-kU3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhX-Te-RAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,6 +184,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="coolButton" destination="xn1-aY-PAO" id="yT2-Nr-rsk"/>
                         <outlet property="nameTextField" destination="Bdh-R7-CG9" id="CwE-95-pmo"/>
                     </connections>
                 </viewController>
@@ -269,6 +274,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="NfI-IN-B77" id="ZYO-FQ-HOa"/>
                         <outlet property="ageStepper" destination="Sj3-ju-n32" id="SIC-1b-srh"/>
+                        <outlet property="coolButton" destination="Hw6-9v-1UN" id="Nyr-qg-3EV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZh-EN-imJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -372,6 +378,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="heButton" destination="rJE-wn-fK9" id="ZJB-Xi-TvN"/>
+                        <outlet property="sheButton" destination="QeM-4v-i4q" id="Iak-Mw-VTy"/>
+                        <outlet property="theyButton" destination="UVR-Bn-zQR" id="Oix-Uv-IDj"/>
                         <segue destination="Uk1-BU-Weu" kind="show" identifier="ToBreed" id="ngw-9m-EtW"/>
                     </connections>
                 </viewController>
@@ -447,6 +456,7 @@
                     </view>
                     <connections>
                         <outlet property="breedPickerView" destination="Jmv-sJ-gB4" id="SVR-v0-3Lt"/>
+                        <outlet property="coolButton" destination="bvK-WN-6F0" id="ZXR-9a-PTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvA-Bs-df7" userLabel="First Responder" sceneMemberID="firstResponder"/>

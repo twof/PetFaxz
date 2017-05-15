@@ -10,12 +10,17 @@ import UIKit
 
 class AgeViewController: UIViewController {
     var dog: Dog?
+    
+    // MARK: IBOutlets
 
     @IBOutlet weak var ageStepper: UIStepper!
     @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var coolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        coolButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
 

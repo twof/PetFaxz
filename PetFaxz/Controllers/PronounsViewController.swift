@@ -11,9 +11,18 @@ import UIKit
 class PronounsViewController: UIViewController {
     var dog: Dog?
     
+    // IBOutlet
+    
+    @IBOutlet weak var sheButton: UIButton!
+    @IBOutlet weak var heButton: UIButton!
+    @IBOutlet weak var theyButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        sheButton.layer.cornerRadius = 10
+        heButton.layer.cornerRadius = 10
+        theyButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 

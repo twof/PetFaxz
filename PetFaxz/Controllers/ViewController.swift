@@ -10,9 +10,22 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController {
+    
+    // MARK: IBOutlets
+    
+    @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CSS but not
+        
+        yesButton.layer.cornerRadius = 10
+        noButton.layer.cornerRadius = 10
+        
         // Do any additional setup after loading the view, typically from a nib.
         
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Register", style: .plain, target: self, action: #selector(registerLocal))

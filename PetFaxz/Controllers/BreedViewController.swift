@@ -11,7 +11,10 @@ import UserNotifications
 
 class BreedViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var dog: Dog?
-
+    
+    // MARK: IBOutlets
+    
+    @IBOutlet weak var coolButton: UIButton!
     @IBOutlet weak var breedPickerView: UIPickerView!
     
     let breeds = ["Affenpinscher",
@@ -218,6 +221,8 @@ class BreedViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        coolButton.layer.cornerRadius = 10
         
         breedPickerView.dataSource = self
         breedPickerView.delegate = self
